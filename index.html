@@ -3,6 +3,58 @@
     
   </head>
   <body>
-    hello
+    					<form action="submit.php" class="form-contact shake" id="contactForm"  data-toggle="validator" method ="post">
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" id="name" placeholder="Enter Name *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text"name="email" class="form-control" id="email" placeholder="Enter Email ">
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text"name="phone" class="form-control" id="phone" placeholder="Enter Phone Number *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<select name="city">
+								<option value="select city">Select city</value>
+								<option value="Kanpur">Kanpur</value>
+							</select>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" name="address" class="form-control" id="address" placeholder="Enter Address *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<input type="text" name="pincode" class="form-control" id="pincode" placeholder="Enter Pincode *" required>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							<select name="delivery">
+								<option value="select city">Type of delivery</value>
+								<option value="Kanpur">Regular</value>
+								<option value="Kanpur">Express</value>
+							</select>
+							<div class="help-block with-errors"></div>
+						</div>
+						<div class="form-group">
+							 <textarea name="detail_of_clothes" class="form-control" rows="5" placeholder="Enter details of Clothes *" required></textarea>
+							<div class="help-block with-errors"></div>
+						</div>
+						
+						<input type="checkbox" name="checkbox" >
+						<div class="agree">
+						You agree to our <a href="">Terms & conditions</a> and <a href="">Privacy policies</a>.
+					    </div>
+						<div class="form-group">
+							<div id="success"></div>
+							<button type="submit" value= "submit" class="btn btn-default">BOOK MY WASH</button>
+						</div>
+						
+					</form>
+					
+
   </body>
 </html>
